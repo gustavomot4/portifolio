@@ -1,0 +1,11 @@
+{
+  "name": "portifolio",
+  "version": "1.0.0",
+  "scripts": {
+    "dev": "vite"
+  },
+  "dependencies": {
+    "swiper": "^12.1.2",
+    "vite": "^7.3.1"
+  }
+}

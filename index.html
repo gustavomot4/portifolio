@@ -11,39 +11,92 @@
 <script src="js/script.js"></script>
 
 <body>
-    <div class="hero">
-        <nav>
-            <h1>My Portfolio</h1>
-            <div class="nav-links">
-                <p>Sobre Mim</p>
-                <p>Meus Projetos</p>
-                <p>Minha Carreira</p>
+    <nav>
+        <h1>My Portfolio</h1>
+        <div class="nav-links">
+            <p>Sobre Mim</p>
+            <p>Meus Projetos</p>
+            <p>Minha Carreira</p>
+        </div>
+    </nav>
+
+    <div class="conteudo-hero">
+
+        <div class="sobre-mim">
+            <h1>Gustavo Alves Mota</h1>
+            <p>* Desenvolvedor Back-End</p>
+            <p>* Estagiário Stefanini Brasil</p>
+            <div class="links">
+                <p id="linkedin" onclick="ChamarLinks(this)"><i class="fa-brands fa-linkedin"></i>Linkedin</p>
+                <p id="github" onclick="ChamarLinks(this)"><i class="fa-brands fa-github"></i>Github</p>
             </div>
-        </nav>
+        </div>
 
-        <div class="conteudo-hero">
+        <div class="conteudo-foto"></div>
+    </div>
 
-            <div class="sobre-mim">
-                <h1>Gustavo Alves Mota</h1>
-                <p>* Desenvolvedor Back-End</p>
-                <p>* Estagiário Stefanini Brasil</p>
-                <div class="links">
-                    <p id="linkedin" onclick="ChamarLinks(this)"><i class="fa-brands fa-linkedin"></i>Linkedin</p>
-                    <p id="github" onclick="ChamarLinks(this)"><i class="fa-brands fa-github"></i>Github</p>
-                </div>
+
+    <div class="meus-projetos">
+        <div class="swiper">
+
+            <div class="swiper-wrapper">
+
+                <div class="swiper-slide"><img src="assets/tapgo.png"></div>
+                <div class="swiper-slide"><img src="assets/tapgoDash.png"></div>
+                <div class="swiper-slide"><img src="assets/tapgoMenu.png"></div>
+
             </div>
 
-            <div class="conteudo-foto"></div>
+            <div class="swiper-pagination"></div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
 
         </div>
 
-    </div>
+        <div class="info-projeto">
+            <h1>TapGo</h1>
+            <h3>Descrição:</h3>
+            <p>O projeto TapGo é um jogo de pênaltis no qual o jogador escolhe um time, e o sistema realiza um sorteio
+                pseudoaleatório para definir um adversário diferente do time escolhido. Esse sistema foi desenvolvido
+                como meu projeto individual no primeiro semestre do curso de Análise e Desenvolvimento de Sistemas.</p>
+            <h3>Tecnologias utilizadas:</h3>
+            <div class="tecnologias">
 
-    <div class="meus-projetos">
+                <div class="tech">
+                    <i class="fa-brands fa-html5 html"></i>
+                    <span>HTML</span>
+                </div>
 
-        
+                <div class="tech">
+                    <i class="fa-brands fa-css3-alt css"></i>
+                    <span>CSS</span>
+                </div>
+
+                <div class="tech">
+                    <i class="fa-brands fa-js js"></i>
+                    <span>JavaScript</span>
+                </div>
+
+                <div class="tech">
+                    <i class="fa-solid fa-file-code json"></i>
+                    <span>JSON</span>
+                </div>
+
+                <div class="tech">
+                    <i class="fa-solid fa-database mysql"></i>
+                    <span>MySQL</span>
+                </div>
+
+            </div>
+            <h3>Repositório:</h3>
+            <div class="links-projeto">
+                <p id="tapgo" onclick="ChamarLinks(this)"><i class="fa-brands fa-github"></i>Github</p>
+            </div>
+
+        </div>
     </div>
 
 </body>
 
 </html>
+<script type="module" src="js/swiper.js"></script>

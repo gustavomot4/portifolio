@@ -32,6 +32,10 @@ nav {
     align-items: center;
     padding: 20px 80px;
     border-bottom: 1px solid rgb(64, 64, 64);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
 }
 
 nav h1{
@@ -59,10 +63,11 @@ nav h1{
     display: flex;
     align-items: center;
     justify-content: space-around;
-    height: 80vh;
+    height: 90vh;
     padding: 0 50px;
+    margin-top: 10vh;
+    background-color: var(--cor-fundo-escuro);
 }
-
 
 .sobre-mim {
     display: flex;
@@ -72,7 +77,6 @@ nav h1{
 .sobre-mim h1 {
     font-size: 40px;
     color: var(--cor-primaria);
-
 }
 
 .sobre-mim p {
@@ -80,7 +84,6 @@ nav h1{
     font-size: 14px;
     margin-left: 15px;
 }
-
 
 /* FOTO */
 
@@ -92,7 +95,12 @@ nav h1{
     background-image: url("https://media.licdn.com/dms/image/v2/D4D03AQFLphNNyi_M0A/profile-displayphoto-scale_400_400/B4DZy6RJPqI8Ag-/0/1772651594875?e=1774483200&v=beta&t=q9GF8zoK7fuORL6wPm7NkN2xz1tYBDNo_QbRYWKXZao");
     background-size: cover;
     background-position: center;
+    transition: all ease 0.3s;
     box-shadow: 0 0 20px var(--cor-primaria);
+}
+
+.conteudo-foto:hover{
+    transform: scale(1.05);
 }
 
 .fa-brands {
@@ -117,4 +125,95 @@ nav h1{
 .links p:hover {
     transform: translateX(5px);
     color: var(--cor-primaria);
+}
+
+
+/* Sliders */
+
+.swiper {
+    width: 60%;
+  height: 60vh;
+  border-radius: 8px;
+  border: 1px solid var(--cor-primaria);
+  box-shadow: 0 0 10px var(--cor-primaria);
+}
+
+.swiper-slide {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 24px;
+}
+
+.swiper-slide img{
+    width: 100%;
+    object-fit: cover;
+    height: 100%;
+
+}
+
+.meus-projetos{
+    padding: 5%;
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    background-color: var(--cor-fundo-claro);
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.info-projeto{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 50%;
+    padding-left: 100px;
+}
+
+.info-projeto p {
+    color: #cfcfcf;
+    font-size: 13px;
+}
+
+.tecnologias i{
+  font-size: 40px;
+  margin: 10px;
+}
+
+.html { color: #E34F26; }
+.css { color: #1572B6; }
+.js { color: #F7DF1E; }
+.json { color: #5A5A5A; }
+.mysql { color: #4479A1; }
+
+.links-projeto {
+    width: 23%;
+}
+.links-projeto p{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 16px;
+}
+
+.tech {
+  position: relative;
+  display: inline-block;
+}
+
+.tech span {
+  position: absolute;
+  bottom: -25px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: black;
+  color: white;
+  padding: 3px 8px;
+  font-size: 12px;
+  border-radius: 5px;
+  opacity: 0;
+}
+
+.tech:hover span {
+  opacity: 1;
 }

@@ -8,4 +8,8 @@ function ChamarLinks(index){
          window.open("https://github.com/gustavomot4", "_blank");
     }
 
+    if(index.id == "tapgo"){
+        window.open("https://github.com/gustavomot4/TAP-GO", "_blank");
+    }
+
 }
