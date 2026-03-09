@@ -1,105 +1,120 @@
-@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300..900;1,300..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap');
 
-*{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
-    color:white;
-    font-family:"Merriweather", serif;
+:root{
+    --cor-primaria: rgb(41 , 234 , 248);
+    --cor-fundo-escuro : #181818;
+    --cor-fundo-claro : #252525;
 }
 
-body{
-    background:#0b0b0b;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: white;
+    font-family: "Archivo Black", sans-serif;
+    font-weight: 400;
+    font-style: normal;
 }
 
-.hero{
-    background-image:url("../assets/heroBackground.png");
-    background-size:cover;
-    background-position:center;
-    height:100vh;
+.hero {
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    background-color: var(--cor-fundo-escuro);
 }
 
 /* NAVBAR */
 
-nav{
-    display:flex;
-    justify-content:space-between;
-    align-items:center;
-    padding:20px 80px;
-    border-bottom:1px solid rgb(64,64,64);
+nav {
+    background-color: var(--cor-fundo-claro);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 80px;
+    border-bottom: 1px solid rgb(64, 64, 64);
 }
 
-.nav-links{
-    display:flex;
-    gap:40px;
-    cursor:pointer;
+nav h1{
+    color: var(--cor-primaria);
 }
 
-.nav-links p{
-    transition:0.3s;
+.nav-links {
+    display: flex;
+    gap: 40px;
+    cursor: pointer;
 }
 
-.nav-links p:hover{
-    transform:translateX(5px);
-    font-weight:800;
+.nav-links p {
+    transition: all ease 0.3s;
 }
 
-/* HERO CONTENT */
-
-.conteudo-hero{
-    display:flex;
-    align-items:center;
-    justify-content:space-around;
-    height:80vh;
-    padding:0 80px;
+.nav-links p:hover {
+    transform: translateX(5px);
+    font-weight: 800;
+    color: var(--cor-primaria);
 }
 
-/* TEXTO */
 
-.sobre-mim{
-    display:flex;
-    flex-direction:column;
-    gap:15px;
-    max-width:400px;
+.conteudo-hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 80vh;
+    padding: 0 50px;
 }
 
-.sobre-mim h1{
-    font-size:40px;
+
+.sobre-mim {
+    display: flex;
+    flex-direction: column;
 }
 
-.sobre-mim p{
-    color:#cfcfcf;
+.sobre-mim h1 {
+    font-size: 40px;
+    color: var(--cor-primaria);
+
 }
 
-/* REDES SOCIAIS */
-
-.redes{
-    display:flex;
-    gap:20px;
-    margin-top:10px;
+.sobre-mim p {
+    color: #cfcfcf;
+    font-size: 14px;
+    margin-left: 15px;
 }
 
-.redes p{
-    cursor:pointer;
-    transition:0.3s;
-}
-
-.redes p:hover{
-    transform:translateY(-3px);
-}
-
-.redes i{
-    margin-right:8px;
-}
 
 /* FOTO */
 
-.conteudo-foto{
-    width:320px;
-    height:320px;
-    border-radius:20px;
-    background-image:url("https://img.freepik.com/fotos-gratis/estudante-apresentando-algo_1368-9233.jpg?semt=ais_hybrid&w=740&q=80");
-    background-size:cover;
-    background-position:center;
-    box-shadow:0 0 30px rgba(0,0,0,0.6);
+.conteudo-foto {
+    width: 350px;
+    height: 350px;
+    border-radius: 50%;
+    border: 3px solid var(--cor-primaria);
+    background-image: url("https://media.licdn.com/dms/image/v2/D4D03AQFLphNNyi_M0A/profile-displayphoto-scale_400_400/B4DZy6RJPqI8Ag-/0/1772651594875?e=1774483200&v=beta&t=q9GF8zoK7fuORL6wPm7NkN2xz1tYBDNo_QbRYWKXZao");
+    background-size: cover;
+    background-position: center;
+    box-shadow: 0 0 20px var(--cor-primaria);
+}
+
+.fa-brands {
+    font-size: 30px;
+}
+
+.links {
+    display: flex;
+    gap: 20px;
+    margin-top: 10%;
+}
+
+.links p {
+    display: flex;
+    align-items: end;
+    font-size: 20px;
+    gap: 7px;
+    cursor: pointer;
+    transition: all ease 0.3s;
+}
+
+.links p:hover {
+    transform: translateX(5px);
+    color: var(--cor-primaria);
 }
